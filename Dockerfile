@@ -1,5 +1,5 @@
 FROM sequenceiq/hadoop-docker
-MKDIR /spark
+RUN mkdir /spark
 WORKDIR /spark
 RUN curl http://www.apache.org/dyn/closer.lua/spark/spark-1.5.2/spark-1.5.2-bin-without-hadoop.tgz > spark-1.5.2-bin-without-hadoop.tgz
 RUN tar xf spark-1.5.2-bin-without-hadoop.tgz
